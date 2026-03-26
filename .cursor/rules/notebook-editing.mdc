@@ -1,0 +1,38 @@
+---
+description: Conventions for editing SIMILAR notebook.md files — preserving structure, populating tables, and maintaining metadata.
+globs: "**/notebook.md"
+alwaysApply: false
+---
+
+# Notebook Editing Conventions
+
+When editing any `notebook.md` file in this repository:
+
+## Structure Preservation
+
+- Never delete section headers (##, ###), blockquotes (>), or italicized guidance text.
+- Never reorder the SIMILAR phase sections — they must remain in S-I-M-I-L-A-R order.
+- Add content below guidance prompts, not in place of them.
+- HTML comments (`<!-- AGENT: ... -->`) are facilitator notes — read them for guidance but never delete them.
+
+## Table Editing
+
+- Add new rows to tables — never overwrite or delete the header row.
+- When a table has example placeholder rows (empty cells), replace them with content, then add more rows as needed.
+
+## Metadata
+
+- Update `Last Updated` in the Metadata table whenever you edit the notebook.
+- When creating a sub-notebook, set its `Parent Notebook` field to a relative link back to the parent.
+- Keep `Phase status` lines accurate — update them as work progresses through each phase.
+
+## Decision Log
+
+- Record every significant design choice in the Decision Log section.
+- Include: date, what was decided, why (rationale), what else was considered, and which SIMILAR phase it relates to.
+
+## Content Style
+
+- Requirements use "shall/must" (mandatory) or "should" (tradeoff) — enforce this vocabulary.
+- Never introduce the word "optimal", "maximize", "minimize", or "simultaneous" into requirements.
+- State requirements as WHAT the system must do, not HOW to implement it.

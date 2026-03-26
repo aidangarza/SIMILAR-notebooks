@@ -1,0 +1,29 @@
+# SIMILAR Notebook Configuration
+
+schema_version: "2.0"
+process: "SIMILAR"
+
+notebook:
+  title: "Water Delivery Subsystem"
+  status: "In Progress"
+  created: "2026-03-10"
+  last_updated: "2026-03-10"
+
+phases:
+  state_the_problem: "complete"
+  investigate_alternatives: "complete"
+  model_the_system: "in_progress"
+  integrate: "in_progress"
+  launch: "not_started"
+  assess_performance: "not_started"
+  re_evaluate: "not_started"
+
+iteration:
+  count: 0
+  current_phase: "model_the_system"
+
+fractal:
+  enabled: true
+  sub_notebooks_dir: "sub-notebooks"
+  parent: "../../"
+  children: []

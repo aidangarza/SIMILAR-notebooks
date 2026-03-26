@@ -1,0 +1,33 @@
+# SIMILAR Notebook Configuration
+# Used when this template is instantiated for a new project
+
+schema_version: "2.0"
+process: "SIMILAR"
+
+notebook:
+  title: "{{TITLE}}"
+  status: "Draft"
+  created: ""
+  last_updated: ""
+
+phases:
+  state_the_problem: "not_started"
+  investigate_alternatives: "not_started"
+  model_the_system: "not_started"
+  integrate: "not_started"
+  launch: "not_started"
+  assess_performance: "not_started"
+  re_evaluate: "not_started"
+
+# Tracks SIMILAR re-evaluation iterations
+iteration:
+  count: 0
+  current_phase: ""
+
+# Fractal structure: sub-notebooks can be created for each subsystem
+# Each sub-notebook lives in sub-notebooks/<name>/
+fractal:
+  enabled: true
+  sub_notebooks_dir: "sub-notebooks"
+  parent: ""       # relative path to parent notebook directory, if any
+  children: []     # list of sub-notebook directory names
