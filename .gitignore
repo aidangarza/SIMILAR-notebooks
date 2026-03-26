@@ -1,1 +1,6 @@
 .DS_Store
+
+# Track only notebooks/example-system; ignore other notebooks
+notebooks/*
+!notebooks/example-system/
+!notebooks/example-system/**
